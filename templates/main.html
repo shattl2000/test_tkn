@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate page</title>
+</head>
+<body>
+<h2>Translate text, language</h2>
+<form method="post" action="/add_message">
+    <input type="text" name="text">
+    <input type="text" name="tag">
+    <button type="submit">Translate</button>
+</form>
+
+<h3>Translate list</h3>
+{% for message in messages %}
+<div>{{ message.text }}&nbsp;<b>#{{ message.output_text }}</b></div>
+{% endfor %}
+
+</body>
+</html>
