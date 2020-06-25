@@ -8,7 +8,7 @@ import sentry_sdk
 from sentry_sdk.integrations.flask import FlaskIntegration
 
 sentry_sdk.init(
-    dsn="http://7b1fb1598c3c41a7b81577c1dee3488d@185.12.30.207:9000/2",
+    dsn="http://7b1fb1598c3c41a7b81577c1dee3488d@172.31.1.15:9000/2",
     debug=True,
     integrations=[FlaskIntegration()]
 )
